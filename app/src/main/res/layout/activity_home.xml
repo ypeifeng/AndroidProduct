@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/themeWhite"
+    tools:context=".MainActivity">
+
+    <com.gull.duty.baseutils.widget.NoScrollViewPager
+        android:id="@+id/vpMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/rgMine"
+        android:background="@color/themeDivider" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignTop="@+id/rgMine"
+        android:background="@color/themeGray" />
+
+    <RadioGroup
+        android:id="@+id/rgMine"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="true"
+        android:clipChildren="false"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <RadioButton
+            android:id="@+id/rbMainHome"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_home_bg"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="首页"
+            android:textColor="@drawable/txt_color_select_black_gray"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbMainOrder"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_order_bg"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="预约"
+            android:textColor="@drawable/txt_color_select_black_gray"
+            android:textSize="12sp" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.2" />
+
+        <RadioButton
+            android:id="@+id/rbMainService"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_service_bg"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="客服"
+            android:textColor="@drawable/txt_color_select_black_gray"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rbMainMine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/rb_mine_bg"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@drawable/txt_color_select_black_gray"
+            android:textSize="12sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvMain11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:text="上传小票"
+        android:textColor="@color/themeGray"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:layout_marginBottom="4dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tvMain11"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/jiahao" />
+
+</RelativeLayout>
